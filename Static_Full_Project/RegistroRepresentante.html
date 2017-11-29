@@ -2,11 +2,10 @@
 <html lang="en">
 
     <head>
-
-        <meta charset="utf-8">
+     <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title></title>
+        <title>BootZard - Bootstrap Wizard Template</title>
 
         <!-- CSS -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
@@ -29,9 +28,12 @@
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 
+
     </head>
 
-    <body>
+    <body >
+    
+
 
 		<!-- Top menu -->
 		<nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
@@ -98,14 +100,14 @@
                     		</div>
                     		
                     		<fieldset>
-                    		    <h4>REPRESENTANTE</h4>
+                    		    <h4>EMPRESA</h4>
                     			<div class="form-group">
                     			    <label class="sr-only" for="f1-first-name">First name</label>
-                                    <input type="text" name="f1-first-name" placeholder="Nombre" class="f1-first-name form-control" id="f1-first-name">
+                                    <input type="text" name="f1-first-name" placeholder="Razo Social" class="f1-first-name form-control" id="f1-first-name">
                                 </div>
                                 <div class="form-group">
                                     <label class="sr-only" for="f1-last-name">Last name</label>
-                                    <input type="text" name="f1-last-name" placeholder="DNI" class="f1-last-name form-control" id="f1-last-name">
+                                    <input type="text" name="f1-last-name" placeholder="RUC" class="f1-last-name form-control" id="f1-last-name">
                                 </div>
                                 
                                 <div class="f1-buttons">
@@ -114,14 +116,14 @@
                             </fieldset>
 
                             <fieldset>
-                                <h4>EMPRESA</h4>
+                                <h4>REPRESENTANTE</h4>
                                 <div class="form-group">
                                     <label class="sr-only" for="f1-email">Email</label>
-                                    <input type="text" name="f1-email" placeholder="Razo SOcial" class="f1-email form-control" id="f1-email">
+                                    <input type="text" name="f1-email" placeholder="Nombre" class="f1-email form-control" id="f1-email">
                                 </div>
                                 <div class="form-group">
                                     <label class="sr-only" for="f1-password">Password</label>
-                                    <input type="password" name="f1-password" placeholder="RUC" class="f1-password form-control" id="f1-password">
+                                    <input type="password" name="f1-password" placeholder="DNI" class="f1-password form-control" id="f1-password">
                                 </div>
                                 
                                 <div class="f1-buttons">
@@ -132,18 +134,27 @@
 
                             <fieldset>
                                 <h4>CONVENIO-CONTRATO</h4>
-                                <div class="form-group">
-                                    <label class="sr-only" for="f1-facebook">Facebook</label>
-                                    <input type="text" name="f1-facebook" placeholder="Facebook..." class="f1-facebook form-control" id="f1-facebook">
-                                </div>
-                                <div class="form-group">
-                                    <label class="sr-only" for="f1-twitter">Twitter</label>
-                                    <input type="text" name="f1-twitter" placeholder="Twitter..." class="f1-twitter form-control" id="f1-twitter">
-                                </div>
-                                <div class="form-group">
-                                    <label class="sr-only" for="f1-google-plus">Google plus</label>
-                                    <input type="text" name="f1-google-plus" placeholder="Google plus..." class="f1-google-plus form-control" id="f1-google-plus">
-                                </div>
+                                <div>
+                               <div class="form-check">
+                      <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                         Subir Contrato
+                                          </label>
+                                          </div>
+                                          <div class="form-check">
+                                          <label class="form-check-label">
+                                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                         Convenio
+                                        </label>
+                                        </div>
+                                    <div>
+                                        <label class="control-label">Selecciona el archivo</label>
+                                        <label class="btn-bs-file btn btn-lg btn-warning">
+                                        Subir
+                                    <input type="file" />
+                                        </label>
+                                 
+                                    </div>           
                                 <div class="f1-buttons">
                                     <button type="button" class="btn btn-previous">Previous</button>
                                     <button type="submit" class="btn btn-next">Next</button>
@@ -152,20 +163,30 @@
                              <fieldset>
                                 <h4>VACANTE</h4>
                                 <div class="form-group">
-                                    <label class="sr-only" for="f1-facebook">Facebook</label>
-                                    <input type="text" name="f1-facebook" placeholder="Facebook..." class="f1-facebook form-control" id="f1-facebook">
+                                   
+                                   
+                             
+                                    <label for="inputState">DIMENSION</label>
+                                    <select id="inputState" class="form-control">
+                                    <option selected>Base de datos</option>
+                                    <option>Base de datos</option>
+                                    <option>Programador</option>
+                                    <option>Analysta</option>
+                                    <option>Arquitect Software</option>
+                                   </select>
+                                
                                 </div>
                                 <div class="form-group">
-                                    <label class="sr-only" for="f1-twitter">Twitter</label>
-                                    <input type="text" name="f1-twitter" placeholder="Twitter..." class="f1-twitter form-control" id="f1-twitter">
+                                    <label class="sr-only" for="f1-twitter"></label>
+                                    <input type="text" name="f1-twitter" placeholder="Area de Trabajo" class="f1-twitter form-control" id="f1-twitter">
                                 </div>
                                 <div class="form-group">
-                                    <label class="sr-only" for="f1-google-plus">Google plus</label>
-                                    <input type="text" name="f1-google-plus" placeholder="Google plus..." class="f1-google-plus form-control" id="f1-google-plus">
+                                    <label class="sr-only" for="f1-google-plus"></label>
+                                    <input type="text" name="f1-google-plus" placeholder="Sueldo" class="f1-google-plus form-control" id="f1-google-plus">
                                 </div>
                                 <div class="f1-buttons">
-                                    <button type="button" class="btn btn-previous">Previous</button>
-                                    <button type="submit" class="btn btn-submit">Submit</button>
+                                    <button type="button" class="btn btn-previous">Regresar</button>
+                                    <button type="submit" class="btn btn-submit">Terminar</button>
                                 </div>
                             </fieldset>
                     	
@@ -175,14 +196,16 @@
                     
             </div>
         </div>
-
-
-        <!-- Javascript -->
+       
+             
+      <!-- Javascript -->
         <script src="assets/js/jquery-1.11.1.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="assets/js/jquery.backstretch.min.js"></script>
         <script src="assets/js/retina-1.1.0.min.js"></script>
         <script src="assets/js/scripts.js"></script>
+        
+
         
         <!--[if lt IE 10]>
             <script src="assets/js/placeholder.js"></script>
